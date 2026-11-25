@@ -269,7 +269,7 @@ def bad_request(e): return "Bad request. Refresh and try again.", 400
 @app.errorhandler(404)
 def not_found(e): return "Page not found.", 404
 
-if _name_ == '_main_':
+if _name_ == "_main_":
     import os
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
